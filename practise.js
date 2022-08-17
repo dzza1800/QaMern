@@ -8,6 +8,6 @@ const app = connect();
 /*app.use("/api",api);
 app.use(bodyParser.json());
 app.use(connect.json());*/
-const api = require("./mongoBuzz");
-app.use("/api", api);
+const api = require("./mongoBuzz.js");
+app.use("/api", bodyParser.json(), api);
 app.listen(1001);

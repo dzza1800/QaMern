@@ -1,8 +1,5 @@
 //using router instead of connecting and then running, this makes cleaner code.
-
-
 const router = require("express").Router();
-
 const cow = require("cowsay");
 const joke = require("one-liner-joke");
 let Text = JSON.stringify(joke.getRandomJokeWithTag("puns"));
